@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Level1 from "./components/level1/Level1";
+import Level2 from "./components/level2/Level2";
 
 class App extends Component {
   constructor(props) {
@@ -30,8 +31,8 @@ class App extends Component {
               onChange={this.handleChange}
             />
           </h1>
-          This is a name: {name}
           <Level1 name={name} />
+          <Level2 name={name} />
         </div>
       </div>
     );

@@ -7,17 +7,33 @@ class Level1 extends Component {
     super(props);
 
     this.state = {
-      name: this.props.name
+      name: ""
     };
   }
+
+  componentDidMount = () => {
+    this.setState({
+      name: this.props.name
+    });
+  };
+
+  componentDidUpdate = () => {
+    if (this.state.name !== this.props.name) {
+      this.setState({
+        name: this.props.name
+      });
+    }
+  };
+
   render() {
+    const { name } = this.state;
     return (
-      <div>
-        <p>{this.state.name}'s favorite movies </p>
+      <div className="Level1">
+        <h2>{name}'s favorite movies</h2>
         <div className="cards">
-          <Card title="yo mama" text="Bin laden" />
-          <Card title="nazi 4 ever" text="heil hitler" />
-          <Card title="trump ftw" text="build a wall!" />
+          <Card title="Card 1" text="Lorem" />
+          <Card title="Card 2" text="ipsum" />
+          <Card title="Card 3" text="solor" />
         </div>
       </div>
     );
