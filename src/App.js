@@ -7,14 +7,12 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "Max"
+      name: "Max Altena"
     };
   }
 
   handleChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
