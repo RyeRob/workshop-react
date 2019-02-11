@@ -7,17 +7,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "Max Altena",
-      list: ["Deadpool 2", "Ready Player One", "Ocean's 8", "Rampage", "Tag"]
+      name: "Evert 'the Tank' van de Grift"
     };
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ name: e.target.value });
   };
 
   render() {
-    const { name, list } = this.state;
     return (
       <div className="App">
         <div className="container">
@@ -25,14 +23,13 @@ class App extends Component {
             Welcome{" "}
             <input
               type="text"
-              name="name"
               placeholder="Your name"
-              value={name}
+              value={this.state.name}
               onChange={this.handleChange}
             />
           </h1>
-          <Level1 name={name} />
-          <Level2 name={name} list={list} />
+          <Level1 name={this.state.name} />
+          <Level2 name={this.state.name} />
         </div>
       </div>
     );

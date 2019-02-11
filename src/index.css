@@ -22,7 +22,7 @@ p {
 }
 
 h1 > input[type="text"]:not(.browser-default) {
-  width: auto;
+  width: 60%;
   font-size: 4rem;
   padding: 10px;
 }
