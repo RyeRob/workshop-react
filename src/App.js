@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Level1 from "./components/level1/Level1";
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class App extends Component {
             />
           </h1>
           This is a name: {name}
-          
+          <Level1 name={name} />
         </div>
       </div>
     );
