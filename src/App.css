@@ -19,3 +19,13 @@
     width: 70%;
   }
 }
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: green;
+  width: 20%;
+}

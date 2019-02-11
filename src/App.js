@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
 import Person from "./components/Person";
+import Level1 from "./components/level1/Level1";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "dylano"
+    };
+  }
   render() {
     return (
       <div className="App">
         <div className="container">
-          <Person
+          <Level1 name={this.state.name} />
+          {/* <Person
             name="Dylano"
             age="22"
             study="ICT"
@@ -26,7 +34,7 @@ class App extends Component {
             // picture={photoMax}
             about="I am Max Altena"
             status="Crippling depression 2.0"
-          />
+          /> */}
         </div>
       </div>
     );
