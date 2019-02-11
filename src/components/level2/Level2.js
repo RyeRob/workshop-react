@@ -5,13 +5,15 @@ class Level2 extends Component {
     super(props);
 
     this.state = {
-      name: ""
+      name: "",
+      list: []
     };
   }
 
   componentDidMount = () => {
     this.setState({
-      name: this.props.name
+      name: this.props.name,
+      list: this.props.list
     });
   };
 
@@ -21,14 +23,25 @@ class Level2 extends Component {
         name: this.props.name
       });
     }
+    if (this.state.list !== this.props.list) {
+      this.setState({
+        list: this.props.list
+      });
+    }
   };
 
   render() {
-    const { name } = this.state;
+    const { name, list } = this.state;
     return (
       <div className="Level2">
-        <h2>{name}'s movie watch list</h2>
-        <p>Cool movies I want to watch</p>
+        <h2>{name}'s watch list</h2>
+        <ul className="collection">
+          {list.length > 0
+            ? list.map(item => {
+                return <li className="collection-item">{item}</li>;
+              })
+            : null}
+        </ul>
       </div>
     );
   }
