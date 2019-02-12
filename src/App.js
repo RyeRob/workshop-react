@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Level1 from "./components/level1/Level1";
 import Level2 from "./components/level2/Level2";
+import Level3 from "./components/level3/Level3";
 
 class App extends Component {
   constructor(props) {
@@ -28,8 +29,12 @@ class App extends Component {
               onChange={this.handleChange}
             />
           </h1>
+          <div className="divider" />
           <Level1 name={this.state.name} />
+          <div className="divider" />
           <Level2 name={this.state.name} />
+          <div className="divider" />
+          <Level3 name={this.state.name} />
         </div>
       </div>
     );

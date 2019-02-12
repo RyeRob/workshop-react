@@ -36,3 +36,30 @@ h1 > input[type="text"]:not(.browser-default) {
   font-size: 2rem;
   padding: 20px;
 }
+
+.collection-item.center {
+  font-size: 20px;
+}
+
+.collection-item.center i {
+  user-select: none;
+}
+
+.secondary-content {
+  cursor: pointer;
+  user-select: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+form button {
+  margin-left: 2%;
+  width: 15%;
+  min-width: 175px;
+  font-size: 2rem;
+}
