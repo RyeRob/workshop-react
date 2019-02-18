@@ -30,29 +30,29 @@ Now that you have a single Movie component, you should be able to create some mo
 
 ## Task-2.0
 
-Good job on completing Task-1! Now let's create a showcase for your 3 favorite movies. The first thing to do is to import the `Level2` component. Go back to `src/App.js` and make the component show up without any errors or warnings. Don't forget to pass down a name to the `Level2` component.
+Good job on completing Task-1! Now let's create a showcase for your 3 favorite movies. The first thing to do is to import the `Level2.js` component. Go back to `src/App.js` and make the component show up without any errors or warnings. Don't forget to pass down a name to the `Level2.js` component.
 
 `Tip! Uncomment Task-2.0`
 
 ### Task-2.1
 
-Ah, nice! Somebodies favorite movies heading showed up. Maybe add your name to it? Check if you passed a prop called `name` in `src/App.js` to the `Level2` component. Now use the passed prop in the component `Level2` to the start of the heading.
+Ah, nice! Somebodies favorite movies heading showed up. Maybe add your name to it? Check if you passed a prop called `name` in `src/App.js` to the `Level2.js` component. Now use the passed prop in the `Level2.js` component to the start of the heading.
 
 `Tip! Look back in the Level1 component to see how the prop name was included`
 
 ### Task-2.2
 
-Now, we know who's favorite movies we are dealing with. Let's actually showcase your favorite movies! Try adding 3 `Card` components with the props `title` and `content` in the `div` with class `row`.
+Now, we know who's favorite movies we are dealing with. Let's actually showcase your favorite movies! Try adding 3 `Card.js` components with the props `title` and `content` in the `div` with class `row`.
 
 `Tip! Referencing old material is a good way to refresh your mind`
 
 ## Task-3.0
 
-Cool to see some of your favorite movies! Now we'd like to know your favorite plots within movies. But first, let's import the `Level3` component and add the prop name to it in `src/App.js` and use it below Task-3.0.
+Cool to see some of your favorite movies! Now we'd like to know your favorite plots within movies. But first, let's import the `Level3.js` component and add the prop name to it in `src/App.js` and use it below Task-3.0.
 
 ### Task-3.1
 
-Within the `Level3` component, use the prop name in the heading to let everyone know who they're dealing with. 
+Within the `Level3.js` component, use the prop name in the heading to let everyone know who they're dealing with.
 
 ### Task-3.2
 
@@ -70,4 +70,22 @@ Wow! You've come this far! Now, let's start battling the final boss. Firstly imp
 
 ### Task-4.1
 
-Task-4.1
+Within the `Level4.js` add the prop name to the start of the heading. Now we'll start making a list of movies you'd still like to watch. Uncomment the code below Task-4.1. This looks like something you saw before, but wait. We haven't imported `Item.js` yet! Do so at the top of the file. Now that we can loop through the list within the state, we still need to get something done. Actually have a state with a list in it! Let's uncomment the constructor to create the state.
+
+### Task-4.2
+
+Whoops, like we forgot something... We can click on the remove button, but we get an error. This is because we didn't create the function we passed to the component. We did some work for you: you can simply uncomment the function `handleClick` below Task-4.2 to make it work.
+
+### Task-4.3
+
+Looks like we can now remove movies from the watchlist! But what is a movie watchlist without the ability to add movies? You can simply uncomment the below Task-4.3 to make the form show up.
+
+`Tip! Don't forget to import all components being used`
+
+### Task-4.4
+
+What is a form without functionality? Nothing really. Plus, we cannot add a movie because the submit button is disabled. To add to that, we cannot even type within the input field! Seems like we need to add some functionality by creating the functions that we pass down to the component through props. Uncomment the functions `handleChange` and `handleSubmit` below Task-4.4. Now try adding an item, should be working!
+
+## Task-Learn_new_thing_you_like
+
+You completed everything we had to offer for this workshop! Sweet! But your battle learning React isn't over yet. This is just the beginning. Within the [presentation](https://docs.google.com/presentation/d/1nezjhHHQZj42iTvoCZTP4u8LPqx2rSkN89ytd5ZcN7A/edit) we gave during the workshop, there are multiple sources you could use to better your skills in React. Have fun learning React!
