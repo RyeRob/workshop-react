@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import Level1 from "./components/level1/Level1";
 import Level2 from "./components/level2/Level2";
 import Level3 from "./components/level3/Level3";
+import Level4 from "./components/level4/Level4";
 
 class App extends Component {
   constructor(props) {
     super(props);
 
+    // Current state
     this.state = {
-      name: "Evert 'the Tank' van de Grift"
+      name: "Max"
     };
   }
 
@@ -33,8 +35,10 @@ class App extends Component {
           <Level1 name={this.state.name} />
           <div className="divider" />
           <Level2 name={this.state.name} />
+          <div className="divider"></div>
+          <Level3 name={this.state.name}/>
           <div className="divider" />
-          <Level3 name={this.state.name} />
+          <Level4 name={this.state.name} />
         </div>
       </div>
     );

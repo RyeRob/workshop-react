@@ -1,10 +1,11 @@
-import React from "react";
-import Card from "./Card";
+import React, { Component } from "react";
+import Card from "../common/Card";
 
-const Level2 = ({ name }) => {
-  return (
-    <div className="Level2">
-      <h2>{name}'s favorite movies</h2>
+class Level2 extends Component {
+  render() {
+    return (
+      <div className="Level2">
+      <h2>{this.props.name}'s favorite movies</h2>
       <div className="row">
         <Card
           title="The Matrix"
@@ -20,7 +21,8 @@ const Level2 = ({ name }) => {
         />
       </div>
     </div>
-  );
-};
+    )
+  }
+}
 
 export default Level2;
