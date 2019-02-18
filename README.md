@@ -46,10 +46,28 @@ Now, we know who's favorite movies we are dealing with. Let's actually showcase 
 
 `Tip! Referencing old material is a good way to refresh your mind`
 
-### Task-3.0
+## Task-3.0
 
-Level3
+Cool to see some of your favorite movies! Now we'd like to know your favorite plots within movies. But first, let's import the `Level3` component and add the prop name to it in `src/App.js` and use it below Task-3.0.
 
-### Task-4.0
+### Task-3.1
 
-Level4
+Within the `Level3` component, use the prop name in the heading to let everyone know who they're dealing with. 
+
+### Task-3.2
+
+Now create a state within the component. You can uncomment the constructor for now. Maybe edit these objects in this array named list within the state to reflect your favorite plots?
+
+### Task-3.3
+
+Let's uncomment the code below Task-3.3 to dynamically render all the objects in the list array within the state. This `map` function is a JavaScript function to loop through entries within an array and return something.
+
+`Tip! We think you might have imported the same component in Level2.js as you should be using here`
+
+## Task-4.0
+
+Wow! You've come this far! Now, let's start battling the final boss. Firstly import the `Level4.js` component in `src/App.js` and pass the name as a prop to the component.
+
+### Task-4.1
+
+Task-4.1

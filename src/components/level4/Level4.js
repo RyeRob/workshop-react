@@ -47,7 +47,9 @@ class Level4 extends Component {
   render() {
     return (
       <div className="Level4">
-        <h2>{this.props.name}'s movie watchlist</h2>
+        {/* Task-4.1 */}
+        <h2>'s movie watchlist</h2>
+
         <ul className="collection">
           <li className="collection-item">
             <Form
@@ -57,15 +59,15 @@ class Level4 extends Component {
             />
           </li>
           {this.state.list.map(item => {
-              return (
-                <Item
-                  key={item.id}
-                  id={item.id}
-                  name={item.name}
-                  handleClick={this.handleClick}
-                />
-              );
-            })}
+            return (
+              <Item
+                key={item.id}
+                id={item.id}
+                name={item.name}
+                handleClick={this.handleClick}
+              />
+            );
+          })}
         </ul>
       </div>
     );
