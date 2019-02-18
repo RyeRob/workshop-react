@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import Item from "./Item";
+// import Movie from "./Movie"; // Task-1.2
 
 class Level1 extends Component {
   render() {
     return (
       <div className="Level1">
-      <h2>{this.props.name}'s seen movies</h2>
-      <ul className="collection">
-        <Item item="The Matrix" />
-        <Item item="Venom" />
-        <Item item="Star Wars" />
-      </ul>
-    </div>
-    )
+        {/* Task-1.1 */}
+        {/* <h2>{this.props.name}'s seen movies</h2> */}
+
+        <ul className="collection">
+          {/* <Movie title="The Lord of the Rings" /> */}
+        </ul>
+      </div>
+    );
   }
 }
 
