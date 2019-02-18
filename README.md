@@ -1,5 +1,28 @@
 # workshop-react
 
+## Table of Contents
+
+- [Task-0.0](#task-00)
+  - [Task-0.1](#task-01)
+  - [Task-0.2](#task-02)
+- [Task-1.0](#task-10)
+  - [Task-1.1](#task-11)
+  - [Task-1.2](#task-12)
+  - [Task-1.3](#task-13)
+- [Task-2.0](#task-20)
+  - [Task-2.1](#task-21)
+  - [Task-2.2](#task-22)
+- [Task-3.0](#task-30)
+  - [Task-3.1](#task-31)
+  - [Task-3.2](#task-32)
+  - [Task-3.3](#task-33)
+- [Task-4.0](#task-40)
+  - [Task-4.1](#task-41)
+  - [Task-4.2](#task-42)
+  - [Task-4.3](#task-43)
+  - [Task-4.4](#task-44)
+- [Task-Learn_new_things_you_like](#task-learn_new_things_you_like)
+
 ## Task-0.0
 
 Once you've cloned this repo, you need to do a few more things to get the environment set up. Let's get started with the first task.
@@ -86,6 +109,6 @@ Looks like we can now remove movies from the watchlist! But what is a movie watc
 
 What is a form without functionality? Nothing really. Plus, we cannot add a movie because the submit button is disabled. To add to that, we cannot even type within the input field! Seems like we need to add some functionality by creating the functions that we pass down to the component through props. Uncomment the functions `handleChange` and `handleSubmit` below Task-4.4. Now try adding an item, should be working!
 
-## Task-Learn_new_thing_you_like
+## Task-Learn_new_things_you_like
 
 You completed everything we had to offer for this workshop! Sweet! But your battle learning React isn't over yet. This is just the beginning. Within the [presentation](https://docs.google.com/presentation/d/1nezjhHHQZj42iTvoCZTP4u8LPqx2rSkN89ytd5ZcN7A/edit) we gave during the workshop, there are multiple sources you could use to better your skills in React. Have fun learning React!
