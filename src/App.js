@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-// import Level1 from "./components/level1/Level1"; // Task-1.0 - Uncomment this line
-// import Level2 from "./components/level2/Level2"; // Task-2.0
+import Level1 from "./components/level1/Level1"; // Task-1.0 - Uncomment this line
+import Level2 from "./components/level2/Level2"; // Task-2.0
 // Task-3.0
 // Task-4.0
 
@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "Max" // Change your name here if you'd like
+      name: "Ryan" // Change your name here if you'd like
     };
   }
 
@@ -30,12 +30,12 @@ class App extends Component {
           <div className="divider" />
 
           {/* Task-1.0 - Uncomment the following line */}
-          {/* <Level1 name={this.state.name} /> */}
+          { <Level1 name={this.state.name} /> }
 
           <div className="divider" />
 
           {/* Task-2.0 */}
-          {/* <Level2 /> */}
+          <Level2 />
 
           <div className="divider" />
 
